@@ -9,9 +9,16 @@
 import UIKit
 import ARKit
 
-class MainViewController: UIView {
+class MainViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
+    let configuration = ARWorldTrackingConfiguration()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
